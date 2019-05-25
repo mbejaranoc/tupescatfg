@@ -1,0 +1,331 @@
+
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+footer {
+   text-align: center;
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   width:100%;
+   padding-top: 1%;
+   background-color: #007bff;
+   color: #f8f9fa
+    }
+article { 
+
+	background-color: #FFFFFF;
+    min-height: 100%;
+    text-align: center;
+}
+
+header{
+	padding-bottom: 6%;
+}
+
+img {
+height: auto;
+max-width: 100%;
+}
+
+/* =========  Form  ===========*/
+
+body {  
+    font-family: Georgia, Times, "Times New Roman", serif; 
+      margin: 0;
+        margin-bottom: 40px;
+} 
+
+
+.generic-form{
+    /*background-color: #F0FFFF;*/
+    max-width: 1800px;
+    /*margin: 20px auto 0;*/
+    /*padding: 40px;*/
+
+    /*color: #858b8e;   ///Colorear todas las palabras de gris///  */
+    /*box-shadow: 6px 6px 6px rgba(0,0,0,0.2);   ///Sombrear el formulario///   */
+}
+
+.generic-form h2{
+    padding-bottom: 0;       
+    font-size: 2rem;
+    font-family: Georgia, Times, "Times New Roman", serif;  /* Añadido */
+    display: inline;
+    text-align: center;
+    /*line-height: 2; /* Añadido para aumentar espacio entre h2 y el resto del form */
+}
+
+.generic-form hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-left:auto;
+    margin-right: auto;
+    border: 1px solid #c5c5c5;
+
+}
+
+.generic-form .form-group{
+	margin-bottom: 20px;
+    margin-left:20px;
+	width: 30%;
+    display:inline-block;
+    text-align: left;
+}
+
+.generic-form .form-control{
+    padding: 12px 20px;
+    height: auto;
+    border-radius: 2px;
+}
+
+.generic-form .radio-inline{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.generic-form .gender{
+    width: 30%;
+    margin-top: 30px;
+    padding-left: 20px
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.generic-form .btn{
+    width: 20%;
+    margin: 20px auto 0;
+    display: block;
+    outline: none;
+}
+
+
+@media screen and (max-width: 800px){
+    .generic-form .form-group{
+        width: 45%;
+    }
+
+    .generic-form{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .generic-form .form-group{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .generic-form h2{
+        text-align: center;
+        font-family: Georgia, Times, "Times New Roman", serif; 
+
+    }
+}
+/*==============  FORM2  ==============*/
+
+
+
+/*  He de hacer que quede a la altura de Contactos */
+.generic-form .required_notification{
+        color: #d45252;  
+        margin: 5px 0 0 0; 
+        display: inline; 
+        float: right;  
+        font-size: 11px;
+
+}
+
+.generic-form input, select{
+    /*border: 1px solid #aaa;  
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;  
+    */
+    border-radius: 2px;  
+    padding-right: 30px;  
+    -moz-transition: padding .25s;  
+    -webkit-transition: padding .25s;  
+    -o-transition: padding .25s;  
+    transition: padding .25s;  
+}
+
+/*.generic-form input:focus{
+        background: #fff;  
+        border: 1px solid #1E90FF;  
+        box-shadow: 0 0 3px #aaa;  
+        padding-right: 70px;    
+}*/
+
+
+
+/*  No me funciona ningún logo   */
+
+.generic-form input:required{
+    background: #fff url(img/red_asterisk.png) no-repeat 98% center; 
+}
+
+.generic-form input[type="checkbox"]{
+    background: none;  
+    box-shadow: none;  
+    border: none;  
+}
+.
+
+
+button.submit {  
+    background-color: #68b12f;  
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));  
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);  
+    background: -moz-linear-gradient(top, #68b12f, #50911e);  
+    background: -ms-linear-gradient(top, #68b12f, #50911e);  
+    background: -o-linear-gradient(top, #68b12f, #50911e);  
+    background: linear-gradient(top, #68b12f, #50911e);  
+    border: 1px solid #509111;  
+    border-bottom: 1px solid #5b992b;  
+    border-radius: 3px;  
+    box-shadow: inset 0 1px 0 0 #9fd574;  
+    color: white;  
+    font-weight: bold;  
+    text-shadow: 0 -1px 0 #396715;  
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+    margin-left: 40%;
+    margin-bottom: 10%
+
+}  
+  
+    button.submit:hover {  
+        opacity: .85;  
+        cursor: pointer;  
+    }  
+  
+    button.submit:active {  
+        border: 1px solid #20911e;  
+        box-shadow: 0 0 10px 5px #356b0b inset;  
+    }
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.text-center {
+    text-align: center;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+}
+
+.table {
+    max-width: 95%;
+    margin-bottom: 1rem;
+    margin: auto;
+}
+.table thead{
+    text-align: center;
+}
+.table tbody{
+    text-align: center;
+}
+
+
+
+
+.btn-form-group{
+    color: #fff;
+    background-color: #2b8cff;
+    border-color: #2B8CFF;
+}
+
+select.form-control {
+    height: auto;
+}
+
+#select {
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius: 2px;
+    padding-right: 30px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+    height: auto;
+}
+
+#myInput {
+    margin: auto;
+    width: 95%;
+}
+
+
+.dropbtn {
+
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top:30px;
+
+}
+
+.dropdown-content a {
+
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*POVUV*/
+body {min-height:100%;}
+footer {z-index:999;}
+body > article {padding-top:10px; padding-bottom:10px;}
+select, input {min-height:10px; padding:5px!important;}
+/*select, input {height:10px!important;}*/
+/*.titulo-formulario {padding-top:25px;}*/
+.generic-form .form-group {vertical-align: top;}
+#dataTable th.seleccionar {width:5%;}
+#dataTable th.cantidad {width:15%;}
+table td, table th {padding:0.25rem!important; vertical-align: inherit!important;}
+table th.id {max-width:20px;}
+table th.fecha-pedido {max-width:100px;}
+table th.fecha-entrega {max-width:100px;}
+table th.cobrado {max-width:100px;}
+table th.cliente {max-width:100px;}
+table th.observaciones {}
+.boton-fijado {position:relative; padding:50px 0 25px;}
+.boton-fijado button {min-width:200px; margin:0;}
+.contenedor-ronin {position:relative;}
+div.user-types {min-width:100%;}
+div.user-types > label, div.user-types div.radio {width:100%; text-align:center}
+div.mensaje {color: #8a6d3b; background-color: #fcf8e3; border:2px solid #faebcc; margin:25px auto; padding:25px; max-width:1000px; border-radius:4px;}
+input[type='file'] {font-size:0.8rem; padding: 0; padding:0!important; overflow:hidden;}
+/*FIN POVUV*/
